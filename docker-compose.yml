@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  energy-simulation:
+    build: .
+    container_name: energy-simulation
+    stdin_open: true
+    tty: true
+    environment:
+      - DISPLAY=${DISPLAY:-:0.0}
+    volumes:
+      - ./scenarios:/app/scenarios
+      - ./energy_agent:/app/energy_agent
+      - ../energy_agent:/app/energy_agent_parent
+      - ../scenarios:/app/scenarios_parent
+      - ../logs:/app/logs
+      - ../visualization:/app/visualization
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    network_mode: host
+    # Interactive mode - starts bash shell with available commands
+    # Override with specific command if needed:
+    # docker-compose run energy-simulation ./run_runSimulationApp.sh /opt/mcr/R2025a indoor_hotspot.json

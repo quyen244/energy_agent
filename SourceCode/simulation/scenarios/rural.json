@@ -1,0 +1,40 @@
+{
+  "name": "3GPP Rural Macro",
+  "description": "3GPP Rural deployment scenario with wide area coverage for high speed vehicles",
+  "deploymentScenario": "rural",
+  
+  "carrierFrequency": 700e6,
+  "systemBandwidth": 20e6,
+  "layout": "hexagonal_grid",
+  "isd": 1732,
+  
+  "numSites": 19,
+  "numSectors": 3,
+  "antennaHeight": 35,
+  "cellRadius": 1000,
+  
+  "numUEs": 100,
+  "userDistribution": "mixed_outdoor_indoor",
+  "ueSpeed": 120,
+  "indoorRatio": 0.5,
+  "outdoorSpeed": 120,
+  
+  "minTxPower": 20,
+  "maxTxPower": 46,
+  "basePower": 1200,
+  "idlePower": 300,
+  
+  "simTime": 400,
+  "timeStep": 1,
+  
+  "rsrpServingThreshold": -115,
+  "rsrpTargetThreshold": -105,
+  "rsrpMeasurementThreshold": -120,
+  "dropCallThreshold": 2,
+  "latencyThreshold": 100,
+  "cpuThreshold": 90,
+  "prbThreshold": 90,
+  
+  "trafficLambda": 10,
+  "peakHourMultiplier": 1.2
+}

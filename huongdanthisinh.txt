@@ -1,0 +1,10 @@
+1. Về setup:
+
+Để chạy code mới phục vụ cho các kịch bản mới thí sinh cần:
+B1: Lưu trữ model đã huấn luyện nếu có (chẳng hạn model trong folder app/energy_agent)
+B2: Thực hiện các bước như trong app/DOCKER_USAGE.md
+B3: Đưa model đã huấn luyện vào folder app/ để thực hiện các công việc với môi trường mô phỏng
+
+2. Về kịch bản cho giai đoạn 3:
+
+Kịch bản cho giai đoạn public test sẽ nằm ở folder app/scenarios, bao gồm các kịch bản đã sử dụng ở giai đoạn 2 (public và private).

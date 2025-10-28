@@ -1,0 +1,40 @@
+    {
+  "name": "3GPP Urban Macro",
+  "description": "3GPP Urban macro deployment scenario with large cells and continuous coverage",
+  "deploymentScenario": "urban_macro",
+  
+  "carrierFrequency": 2e9,
+  "systemBandwidth": 100e6,
+  "layout": "hexagonal_grid",
+  "isd": 500,
+  
+  "numSites": 7,
+  "numSectors": 3,
+  "antennaHeight": 25,
+  "cellRadius": 200,
+  
+  "numUEs": 300,
+  "userDistribution": "mixed_outdoor_indoor",
+  "ueSpeed": 30,
+  "indoorRatio": 0.8,
+  "outdoorSpeed": 30,
+  
+  "minTxPower": 20,
+  "maxTxPower": 46,
+  "basePower": 1000,
+  "idlePower": 250,
+  
+  "simTime": 400,
+  "timeStep": 1,
+  
+  "rsrpServingThreshold": -110,
+  "rsrpTargetThreshold": -100,
+  "rsrpMeasurementThreshold": -115,
+  "dropCallThreshold": 1,
+  "latencyThreshold": 50,
+  "cpuThreshold": 95,
+  "prbThreshold": 95,
+  
+  "trafficLambda": 25,
+  "peakHourMultiplier": 1.8
+}

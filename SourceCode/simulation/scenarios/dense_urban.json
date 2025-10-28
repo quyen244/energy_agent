@@ -1,0 +1,40 @@
+{
+  "name": "Dense Urban",
+  "description": "3GPP Dense urban with macro and micro cells",
+  "deploymentScenario": "dense_urban",
+  
+  "carrierFrequency": 4e9,
+  "systemBandwidth": 200e6,
+  "layout": "two_layer",
+  "isd": 200,
+  
+  "numSites": 7,
+  "numSectors": 3,
+  "antennaHeight": 25,
+  "cellRadius": 200,
+  
+  "numUEs": 300,
+  "userDistribution": "Uniform/macro",
+  "ueSpeed": 3,
+  "indoorRatio": 0.8,
+  "outdoorSpeed": 30,
+  
+  "minTxPower": 10,
+  "maxTxPower": 46,
+  "basePower": 1000,
+  "idlePower": 250,
+  
+  "simTime": 400,
+  "timeStep": 1,
+  
+  "rsrpServingThreshold": -110,
+  "rsrpTargetThreshold": -100,
+  "rsrpMeasurementThreshold": -115,
+  "dropCallThreshold": 1,
+  "latencyThreshold": 50,
+  "cpuThreshold": 95,
+  "prbThreshold": 95,
+  
+  "trafficLambda": 20,
+  "peakHourMultiplier": 1.3
+}
